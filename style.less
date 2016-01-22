@@ -63,11 +63,11 @@ p {
 header {
     @image-size: 120px;
     @header-font-size: 36px;
-    @text-color: #e6ecff;
+    @text-color: @dark-background-text-color;
 
     padding: (@image-size / 2 - @header-font-size) 0;
 
-    background: #3c3f55;
+    background: @dark-background-color;
     color: @text-color;
     font-family: 'Raleway', 'Arial', sans-serif;
     border-bottom: 2px solid darken(@text-color, 10%);
@@ -202,5 +202,18 @@ main {
 
     #personal-projects {
         .entries;
+    }
+}
+
+
+footer {
+    margin: auto;
+    padding: 1.5em 0;
+    background-color: @dark-background-color;
+    color: @dark-background-text-color;
+    text-align: center;
+
+    a {
+        color: inherit;
     }
 }

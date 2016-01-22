@@ -251,3 +251,13 @@ main #personal-projects .entry .date {
   margin-left: 0.5em;
   font-size: 0.8em;
 }
+footer {
+  margin: auto;
+  padding: 1.5em 0;
+  background-color: #3c3f55;
+  color: #e6ecff;
+  text-align: center;
+}
+footer a {
+  color: inherit;
+}
