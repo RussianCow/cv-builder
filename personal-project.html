@@ -1,0 +1,20 @@
+{% from 'tech-used.html' import tech_used %}
+
+{% macro project_entry(entry) %}
+    <div class="entry">
+        <h2>
+            <span class="name">{{ entry.name }}</span>
+            <span class="date">
+                {{ entry.start_date }} &ndash; {{ entry.end_date or 'present' }}
+            </span>
+        </h2>
+
+        {{ tech_used(entry.tech_used) }}
+
+        <div class="job-description">{{ render_text(entry.description) }}</div>
+
+        {% if entry.url %}
+            <a href="{{ entry.url }}">Project Link</a>
+        {% endif %}
+    </div>
+{% endmacro %}

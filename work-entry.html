@@ -1,0 +1,19 @@
+{% from 'tech-used.html' import tech_used %}
+
+{% macro work_entry(entry) %}
+    <div class="entry">
+        <h2>
+            <span class="role">{{ entry.role }}</span>
+            {% if entry.employer %}
+                @ <span class="employer">{{ entry.employer }}</span>
+            {% endif %}
+            <span class="date">
+                {{ entry.start_date }} &ndash; {{ entry.end_date }}
+            </span>
+        </h2>
+
+        {{ tech_used(entry.tech_used) }}
+
+        <div class="job-description">{{ render_text(entry.job_description) }}</div>
+    </div>
+{% endmacro %}

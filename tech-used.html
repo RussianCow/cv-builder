@@ -1,0 +1,7 @@
+{% macro tech_used(tech_list) %}
+    <ul class="tech-used">
+        {% for tech in tech_list %}
+            <li class="tech" data-tech="{{ tech }}">{{ tech }}</li>
+        {% endfor %}
+    </ul>
+{% endmacro %}

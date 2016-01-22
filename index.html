@@ -1,0 +1,84 @@
+{% from 'work-entry.html' import work_entry %}
+{% from 'personal-project.html' import project_entry %}
+{% from 'tech-used.html' import tech_used %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <title>Sasha Chedygov's CV</title>
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Raleway:400,600,700,900:f/Open+Sans:400,600" />
+    <link rel="stylesheet" href="style.css" />
+    <!-- style.css generated from style.less -->
+</head>
+<body>
+    <header>
+        <div class="inner">
+            <div id="portrait"></div>
+
+            <h1 id="name">Sasha Chedygov</h1>
+
+            <ul id="links">
+                <li class="link">
+                    <a href="mailto:sasha1rus@gmail.com">Email</a>
+                </li>
+
+                <li class="separator"></li>
+
+                <li class="link">
+                    <a href="https://github.com/russiancow">GitHub</a>
+                </li>
+
+                <li class="separator"></li>
+
+                <li class="link">
+                    <a href="http://stackoverflow.com/users/104184/sasha-chedygov">Stack Overflow</a>
+                </li>
+
+                <li class="separator"></li>
+
+                <li class="link">
+                    <a href="https://www.linkedin.com/in/sasha-chedygov-741a302b">LinkedIn</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section id="blurb">
+            <h1>Who Am I?</h1>
+
+            <p>I am a <strong>self-taught</strong>, <strong>full-stack</strong> software developer with an inclination towards backend development. Most of my experience is with web development, but I have experience with mobile, desktop, and machine learning as well. I consider myself very <strong>well-rounded</strong>, and pride myself on being an extremely <strong>quick learner</strong>.</p>
+
+            <p>My technical interests lie in databases, high-level architecture, concurrency, and performance. I am interested in working on a team with varied experience levels and learning from my peers. Most importantly, I want to build apps and services that <strong>solve real problems</strong>.</p>
+        </section>
+
+        <section id="tech-experience">
+            <h1>Tech Experience</h1>
+
+            {% for tech_type in tech_experience %}
+                <h3>{{ tech_type.label }}:</h3>
+                {{ tech_used(tech_type.tech) }}
+            {% endfor %}
+        </section>
+
+        <section id="work-experience">
+            <h1>Work Experience</h1>
+
+            {% for entry in work_experience %}
+                {{ work_entry(entry) }}
+            {% endfor %}
+        </section>
+
+        <section id="personal-projects">
+            <h1>Personal Projects</h1>
+
+            {% for entry in personal_projects %}
+                {{ project_entry(entry) }}
+            {% endfor %}
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
