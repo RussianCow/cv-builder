@@ -10,7 +10,7 @@ Then:
 
     python builder.py data.yaml
 
-The relevant output files are `out.html`, `app.js`, and `style.css`. To have the builder run any time any of the input files are changed:
+The relevant output files are `out.html`, `app.js`, `style.css`, and `portrait.jpg`. To have the builder run any time any of the input files are changed:
 
     ./watch.sh
 
