@@ -1,34 +1,67 @@
 tech_experience:
-  - label: Experienced (5+ years)
+  - label: Experienced
     tech:
-      - Python
-      - PHP
       - Frontend JavaScript
+      - React.js
+      - Python
       - PostgreSQL
       - MySQL
-  - label: Proficient (1 &ndash; 4 years)
+
+  - label: Proficient
     tech:
       - Node.js
       - Ruby
       - iOS
       - Swift
+      - PHP
       - Linux
       - MongoDB
       - Redis
       - AngularJS
-      - React.js
       - Backbone.js
       - Vagrant
-  - label: Learning (< 1 year)
+
+  - label: Learning
     tech:
-      - Elixir
-      - DevOps
-      - AWS
+      - Rust
+      - Docker
 
 
 work_experience:
+  - employer: Manzama
+    role: Senior Frontend Engineer
+    start_date: January 2017
+    end_date: Present
+    tech_used:
+      - Frontend JavaScript
+      - React.js
+      - Python
+      - Django
+      - Node.js
+      - PostgreSQL
+      - PostgREST
+      - Linux
+      - Docker
+    job_description: |
+      Manzama provides various market intelligence services, primarily geared at law firms. Though I wear a lot of hats, I am primarily focused on bringing our frontend development stack (previously composed  mostly of YUI and jQuery) up to modern day standards with React and Redux. I also built the frontend experience of our latest product, Manzama Insights, from the ground up.
+
+  - employer: Mercenary Technologies
+    role: Software Engineer
+    start_date: March 2016
+    end_date: December 2016
+    tech_used:
+      - Python
+      - Frontend JavaScript
+      - Node.js
+      - AngularJS
+      - PostgreSQL
+      - Linux
+      - Vagrant
+    job_description: |
+      Mercenary Technologies was a full-service technical consultancy serving pacific northwest customers, from startups to mid-market. My role in the company was as a generalist software engineer on a range of products and services, including a Django/AngularJS storefront and a warehouse automation project with Python.
+
   - employer: PNDLM
-    role: Lead Software Developer
+    role: Senior Software Engineer
     start_date: October 2014
     end_date: December 2015
     tech_used:
@@ -44,12 +77,12 @@ work_experience:
       - Linux
       - Vagrant
     job_description: |
-      PNDLM is a digital agency that offers a wide range of services to clients, from software development and design to business consulting and SEO. I lead a team to develop apps and services on a range of tech stacks. I spent most of my time doing full-stack development for iOS apps in Swift, with PHP and Python on the backend, but also spent a lot of time doing front-end web development with React.js and Redux. My role in the company went from being a one-man team working on an iOS app to eventually leading and mentoring a team of 3 junior developers. Among the projects I worked on are: two iOS apps, one of which is currently in the App Store; an interactive, web-based bingo app; a web-based calendar builder powered by React.js and Node.js; and a Magento-based ecommerce site.
+      PNDLM is a digital agency that offers a wide range of services to clients, from software development and design to business consulting and SEO. I lead a team to develop apps and services on a range of tech stacks. I spent most of my time doing full-stack development for iOS apps in Swift, with PHP and Python on the backend, but I also did front-end web development with React.js and Redux. My role in the company went from being a one-man team working on an iOS app to eventually leading and mentoring a team of 3 junior developers. Among the projects I worked on are: two iOS apps, one of which is currently in the App Store; an interactive, web-based bingo app; a web-based calendar builder powered by React.js and Node.js; and a Magento-based ecommerce site.
 
       I was laid off due to financial reasons.
 
   - employer: DonorDynamics
-    role: Software Developer and CTO
+    role: Software Engineer and CTO
     start_date: May 2013
     end_date: November 2014
     tech_used:
@@ -107,19 +140,6 @@ work_experience:
 
 
 personal_projects:
-  - name: World Plays Tetris
-    url: https://github.com/russiancow/world-plays-tetris
-    start_date: January 2016
-    tech_used:
-      - Elixir
-      - React.js
-      - Kafka
-      - PostgreSQL
-      - Vagrant
-      - Linux
-    description: |
-      It's like Twitch Plays Pokémon, only Tetris, and web-based. This is an experiment in creating an app and infrastructure that can handle a burst of real-time traffic, as well as a chance for me to finally get my hands dirty with Elixir and the Erlang platform. The project is still in its very early stages, but once it gets to a certain point, I plan to stream its development on Twitch.tv.
-
   - name: 12credits
     start_date: 2011
     end_date: 2012
