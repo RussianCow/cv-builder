@@ -64,24 +64,27 @@ header {
     @image-size: 120px;
     @header-font-size: 36px;
     @text-color: @dark-background-text-color;
+    @border-color: darken(@text-color, 10%);
 
     padding: (@image-size / 2 - @header-font-size) 0;
 
     background: @dark-background-color;
     color: @text-color;
     font-family: 'Raleway', 'Arial', sans-serif;
-    border-bottom: 2px solid darken(@text-color, 10%);
+    border-bottom: 4px solid @border-color;
 
     .inner {
         max-width: @page-width;
         margin: auto;
+        padding: 0 @page-padding;
+        box-sizing: border-box;
     }
 
     #portrait {
         width: @image-size;
         height: @image-size;
         border-radius: @image-size / 2;
-        border: 4px solid #b3adc2;
+        border: 4px solid @border-color;
         background: url('portrait.jpg') no-repeat center center;
         background-size: contain;
 
@@ -135,8 +138,13 @@ header {
 
 main {
     max-width: @page-width;
+    padding: 0 @page-padding;
     margin: 90px auto 0;
     box-sizing: border-box;
+
+    @media only screen and (max-width: 420px) {
+        margin-top: @page-padding;
+    }
 
     h1 {
         font-size: 26px;
@@ -151,7 +159,7 @@ main {
     }
 
     #blurb {
-        background: #e6ecff;
+        background: @dark-background-text-color;
         padding: 12px;
         border-radius: 8px;
 
@@ -211,9 +219,15 @@ footer {
     padding: 1.5em 0;
     background-color: @dark-background-color;
     color: @dark-background-text-color;
-    text-align: center;
 
     a {
         color: inherit;
+    }
+
+    p {
+        text-align: center;
+        margin: 0;
+        margin-bottom: 0.5em;
+        padding: 0;
     }
 }
