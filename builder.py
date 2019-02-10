@@ -1,8 +1,12 @@
+#!/usr/bin/env python
+
+from datetime import date
 import logging
 import subprocess
 import sys
 
 import jinja2
+from markdown import markdown
 import yaml
 
 
@@ -15,6 +19,7 @@ def build(data_file_name):
        the CV."""
     with open(data_file_name) as f:
         data = yaml.load(f)
+        data['last_updated'] = get_current_date()
         build_html(data)
     build_css(['style.less'])
     logger.info('Successfully built CV')
@@ -47,12 +52,12 @@ def render_template(file_name, *args, **kwargs):
 
 def render_text(text):
     """A helper function for rendering blocks of text (like job
-       descriptions). Currently, all it does is turns multiline strings
-       into HTML paragraphs."""
-    lines = text.split('\n')
-    paragraphs = [line for line in lines if line.strip()]
-    html_paragraphs = ['<p>{}</p>'.format(p) for p in paragraphs]
-    return ''.join(html_paragraphs)
+       descriptions) using Markdown."""
+    return markdown(text)
+
+
+def get_current_date():
+    return date.today().strftime('%Y-%m-%d')
 
 
 if __name__ == '__main__':

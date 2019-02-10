@@ -132,17 +132,19 @@ header {
   background: #3c3f55;
   color: #e6ecff;
   font-family: 'Raleway', 'Arial', sans-serif;
-  border-bottom: 2px solid #b3c5ff;
+  border-bottom: 4px solid #b3c5ff;
 }
 header .inner {
-  max-width: 900px;
+  max-width: 800px;
   margin: auto;
+  padding: 0 10px;
+  box-sizing: border-box;
 }
 header #portrait {
   width: 120px;
   height: 120px;
   border-radius: 60px;
-  border: 4px solid #b3adc2;
+  border: 4px solid #b3c5ff;
   background: url('portrait.jpg') no-repeat center center;
   background-size: contain;
   float: left;
@@ -181,9 +183,15 @@ header #links li.separator::after {
   font-weight: bold;
 }
 main {
-  max-width: 900px;
+  max-width: 800px;
+  padding: 0 10px;
   margin: 90px auto 0;
   box-sizing: border-box;
+}
+@media only screen and (max-width: 420px) {
+  main {
+    margin-top: 10px;
+  }
 }
 main h1 {
   font-size: 26px;
@@ -256,8 +264,13 @@ footer {
   padding: 1.5em 0;
   background-color: #3c3f55;
   color: #e6ecff;
-  text-align: center;
 }
 footer a {
   color: inherit;
+}
+footer p {
+  text-align: center;
+  margin: 0;
+  margin-bottom: 0.5em;
+  padding: 0;
 }
