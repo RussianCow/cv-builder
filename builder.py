@@ -37,7 +37,9 @@ def build_css(file_names):
        the same name."""
     for file_name in file_names:
         css_file_name = '.'.join(file_name.split('.')[:-1]) + '.css'
-        subprocess.call(['lessc', file_name, css_file_name])
+        which_ret = subprocess.run(['which', 'lessc'], capture_output=True)
+        lessc_path = which_ret.stdout.rstrip(b'\n')
+        subprocess.run([lessc_path, file_name, css_file_name])
 
 
 def render_template(file_name, *args, **kwargs):
