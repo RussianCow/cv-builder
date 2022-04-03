@@ -44,9 +44,9 @@
         <section id="blurb">
             <h1>Who Am I?</h1>
 
-            <p>I am a <strong>self-taught</strong>, <strong>full-stack</strong> software engineer with an inclination towards frontend web development. Most of my experience is with web technologies, but I have worked with mobile, desktop, and machine learning as well. I consider myself very <strong>well-rounded</strong> and pride myself on being an extremely <strong>quick learner</strong>.</p>
-
-            <p>My technical interests lie in high-level architecture, UI/UX, and performance. I am interested in working on a team with varied experience levels and learning from my peers. Most importantly, I want to <strong>do work that matters</strong>.</p>
+            <p>
+                I am a <strong>self-taught</strong>, <strong>full-stack</strong> software engineer with a focus on <strong>building great user experiences</strong>. Most of my professional experience is with web technologies, but I pride myself in being <strong>well-rounded</strong> and an extremely <strong>quick learner</strong>.
+            </p>
         </section>
 
         <section id="tech-experience">
@@ -65,14 +65,6 @@
 
             {% for entry in work_experience %}
                 {{ work_entry(entry) }}
-            {% endfor %}
-        </section>
-
-        <section id="personal-projects">
-            <h1>Personal Projects</h1>
-
-            {% for entry in personal_projects %}
-                {{ project_entry(entry) }}
             {% endfor %}
         </section>
     </main>

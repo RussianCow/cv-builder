@@ -277,6 +277,9 @@ main .entries .entry .date {
   margin-left: 0.5em;
   font-size: 0.8em;
 }
+main .entries .entry .job-description ul {
+  padding-left: 1em;
+}
 main #tech-experience h3 {
   display: inline-block;
   margin-right: 0.25em;
@@ -301,25 +304,8 @@ main #work-experience .entry .date {
   margin-left: 0.5em;
   font-size: 0.8em;
 }
-main #personal-projects h3 {
-  margin: 0.25em 0 0.25em;
-}
-main #personal-projects .entry {
-  margin-bottom: 20px;
-  break-inside: avoid;
-}
-main #personal-projects .entry h2 {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-main #personal-projects .entry .tech-used {
-  margin-top: 4px;
-}
-main #personal-projects .entry .date {
-  font-weight: normal;
-  margin-left: 0.5em;
-  font-size: 0.8em;
+main #work-experience .entry .job-description ul {
+  padding-left: 1em;
 }
 footer {
   margin: auto;
