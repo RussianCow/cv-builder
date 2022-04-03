@@ -3,10 +3,12 @@
 {% macro work_entry(entry) %}
     <div class="entry">
         <h2>
-            <span class="role">{{ entry.role }}</span>
-            {% if entry.employer %}
-                @ <span class="employer">{{ entry.employer }}</span>
-            {% endif %}
+            <span class="employer-role">
+                <span class="role">{{ entry.role }}</span>
+                {% if entry.employer %}
+                    @ <span class="employer">{{ entry.employer }}</span>
+                {% endif %}
+            </span>
             <span class="date">
                 {{ entry.start_date }} &ndash; {{ entry.end_date }}
             </span>

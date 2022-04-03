@@ -1,11 +1,3 @@
-.clear::before,
-.clear::after {
-  content: "";
-  display: table;
-}
-.clear::after {
-  clear: both;
-}
 html,
 body,
 div,
@@ -93,6 +85,7 @@ video {
 }
 body {
   font-family: 'Open Sans', 'Arial', sans-serif;
+  color: #303030;
   line-height: 1.4;
 }
 h1,
@@ -101,38 +94,54 @@ h2 {
 }
 p {
   margin-bottom: 0.5em;
-  text-align: justify;
+}
+@media print {
+  p {
+    font-size: 13px;
+  }
+}
+.no-break {
+  break-inside: avoid;
 }
 .tech-used {
   list-style-type: none;
-  font-size: 14px;
+  display: inline-flex;
+  font-size: 13px;
 }
-.tech-used::before,
-.tech-used::after {
-  content: "";
-  display: table;
-}
-.tech-used::after {
-  clear: both;
+@media print {
+  .tech-used {
+    font-size: 11px;
+  }
 }
 .tech-used .tech {
-  float: left;
-  padding: 0.25em 0.5em;
+  padding: 2px 5px;
   margin: 0 0.5em 0.5em 0;
   cursor: default;
-  background: #e6ecff;
-  transition: 0.3s background;
+  border: 1px solid #dfdfdf;
+  border-radius: 1em;
+  transition: 0.2s background;
 }
 .tech-used .tech:hover,
 .tech-used .tech.active {
-  background: #bdcdff;
+  background: #dfdfdf;
 }
 header {
   padding: 20px 0;
   background: #3c3f55;
   color: #e6ecff;
   font-family: 'Raleway', 'Arial', sans-serif;
-  border-bottom: 4px solid #b3c5ff;
+  border-bottom: 4px solid #e6ecff;
+}
+@media print {
+  header {
+    background: transparent;
+    border-color: #cccccc;
+    color: #303030;
+    padding: 0 0 10px;
+  }
+  header .cv-suffix {
+    display: none;
+  }
 }
 header .inner {
   max-width: 800px;
@@ -150,13 +159,17 @@ header .inner {
   }
 }
 header #name {
-  font-size: 36px;
+  font-size: 32px;
   line-height: 1;
 }
 @media only screen and (max-width: 420px) {
   header #name {
-    font-size: 32px;
-    margin-bottom: 5px;
+    font-size: 22px;
+  }
+}
+@media print {
+  header #name {
+    font-size: 24px;
   }
 }
 header #links {
@@ -173,6 +186,11 @@ header #links li.link a {
 header #links li.link a:hover {
   border-style: solid;
 }
+@media print {
+  header #links li.link a {
+    border-bottom-color: #303030;
+  }
+}
 header #links li.separator {
   width: 20px;
   text-align: center;
@@ -180,6 +198,15 @@ header #links li.separator {
 header #links li.separator::after {
   content: "·";
   font-weight: bold;
+}
+header #contact {
+  list-style-type: none;
+  display: none;
+}
+@media print {
+  header #contact {
+    display: block;
+  }
 }
 main {
   max-width: 800px;
@@ -193,54 +220,81 @@ main {
   }
 }
 main h1 {
-  font-size: 26px;
-  margin-bottom: 12px;
+  margin-bottom: 15px;
   line-height: 1;
+  font-weight: normal;
 }
 main a {
   text-decoration: none;
   color: #50106a;
   border-bottom: 1px dotted #e0b0ef;
 }
-main #blurb {
-  background: #e6ecff;
-  padding: 12px;
-  border-radius: 8px;
-}
-main #blurb h1 {
-  border-bottom: none;
-}
 main section {
-  margin-bottom: 24px;
+  margin-bottom: 20px;
 }
 main section h1 {
   border-bottom: 2px dotted #ccc;
+  font-size: 24px;
+}
+@media print {
+  main section h1 {
+    font-size: 20px;
+  }
 }
 main section h2 {
   font-size: 20px;
 }
+@media print {
+  main section h2 {
+    font-size: 18px;
+  }
+}
 main section h3 {
   font-size: 18px;
 }
-main .tech-used {
-  margin: 4px 0;
+@media print {
+  main section h3 {
+    font-size: 16px;
+  }
 }
 main .entries h3 {
   margin: 0.25em 0 0.25em;
 }
 main .entries .entry {
-  margin-bottom: 14px;
+  margin-bottom: 20px;
+  break-inside: avoid;
+}
+main .entries .entry h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main .entries .entry .tech-used {
+  margin-top: 4px;
 }
 main .entries .entry .date {
   font-weight: normal;
   margin-left: 0.5em;
   font-size: 0.8em;
 }
+main #tech-experience h3 {
+  display: inline-block;
+  margin-right: 0.25em;
+}
 main #work-experience h3 {
   margin: 0.25em 0 0.25em;
 }
 main #work-experience .entry {
-  margin-bottom: 14px;
+  margin-bottom: 20px;
+  break-inside: avoid;
+}
+main #work-experience .entry h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main #work-experience .entry .tech-used {
+  margin-top: 4px;
 }
 main #work-experience .entry .date {
   font-weight: normal;
@@ -251,7 +305,16 @@ main #personal-projects h3 {
   margin: 0.25em 0 0.25em;
 }
 main #personal-projects .entry {
-  margin-bottom: 14px;
+  margin-bottom: 20px;
+  break-inside: avoid;
+}
+main #personal-projects .entry h2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+main #personal-projects .entry .tech-used {
+  margin-top: 4px;
 }
 main #personal-projects .entry .date {
   font-weight: normal;
@@ -269,7 +332,11 @@ footer a {
 }
 footer p {
   text-align: center;
-  margin: 0;
   margin-bottom: 0.5em;
   padding: 0;
+}
+@media print {
+  footer {
+    display: none;
+  }
 }

@@ -1,4 +1,4 @@
-@import 'mixins';
+@import 'variables';
 
 
 html, body, div, span, applet, object, iframe,
@@ -22,6 +22,7 @@ time, mark, audio, video {
 
 body {
     font-family: @body-font;
+    color: @text-color;
     line-height: 1.4;
 }
 
@@ -32,45 +33,62 @@ h1, h2 {
 
 p {
     margin-bottom: 0.5em;
-    text-align: justify;
+    @media print {
+        font-size: 13px;
+    }
+}
+
+.no-break {
+    break-inside: avoid;
 }
 
 
 .tech-used {
-    .clear;
-
     list-style-type: none;
-    font-size: 14px;
+    display: inline-flex;
+    font-size: 13px;
+    @media print {
+        font-size: 11px;
+    }
 
     .tech {
-        @background: #e6ecff;
+        @border-color: #dfdfdf;
 
-        float: left;
-        padding: 0.25em 0.5em;
+        padding: 2px 5px;
         margin: 0 0.5em 0.5em 0;
 
         cursor: default;
-        background: @background;
-        transition: 0.3s background;
+        border: 1px solid @border-color;
+        border-radius: 1em;
+        transition: 0.2s background;
 
         &:hover, &.active {
-            background: darken(@background, 8%);
+            background: @border-color;
         }
     }
 }
 
 
 header {
-    @image-size: 120px;
-    @text-color: @dark-background-text-color;
-    @border-color: darken(@text-color, 10%);
+    @header-text-color: @dark-background-text-color;
+    @border-color: @header-text-color;
 
     padding: 20px 0;
-
     background: @dark-background-color;
-    color: @text-color;
+    color: @header-text-color;
     font-family: 'Raleway', 'Arial', sans-serif;
     border-bottom: 4px solid @border-color;
+
+    @media print {
+        background: transparent;
+        border-color: #cccccc;
+        color: @text-color;
+        padding: 0 0 10px;
+
+        .cv-suffix {
+            display: none;
+        }
+    }
 
     .inner {
         max-width: @page-width;
@@ -88,11 +106,13 @@ header {
     }
 
     #name {
-        font-size: 36px;
+        font-size: 32px;
         line-height: 1;
         @media only screen and (max-width: 420px) {
-            font-size: 32px;
-            margin-bottom: 5px;
+            font-size: 22px;
+        }
+        @media print {
+            font-size: 24px;
         }
     }
 
@@ -106,12 +126,15 @@ header {
                     text-decoration: none;
                     color: inherit;
                     text-transform: lowercase;
-                    border-bottom: 1px dotted @text-color;
+                    border-bottom: 1px dotted @header-text-color;
 
                     transition: 0.4s border-style;
 
                     &:hover {
                         border-style: solid;
+                    }
+                    @media print {
+                        border-bottom-color: @text-color;
                     }
                 }
             }
@@ -125,6 +148,15 @@ header {
                     font-weight: bold;
                 }
             }
+        }
+    }
+
+    #contact {
+        list-style-type: none;
+
+        display: none;
+        @media print {
+            display: block;
         }
     }
 }
@@ -141,9 +173,9 @@ main {
     }
 
     h1 {
-        font-size: 26px;
-        margin-bottom: 12px;
+        margin-bottom: 15px;
         line-height: 1;
+        font-weight: normal;
     }
 
     a {
@@ -152,34 +184,30 @@ main {
         border-bottom: 1px dotted #e0b0ef;
     }
 
-    #blurb {
-        background: @dark-background-text-color;
-        padding: 12px;
-        border-radius: 8px;
-
-        h1 {
-            border-bottom: none;
-        }
-    }
-
     section {
-        margin-bottom: 24px;
+        margin-bottom: 20px;
 
         h1 {
             border-bottom: 2px dotted #ccc;
+            font-size: 24px;
+            @media print {
+                font-size: 20px;
+            }
         }
 
         h2 {
             font-size: 20px;
+            @media print {
+                font-size: 18px;
+            }
         }
 
         h3 {
             font-size: 18px;
+            @media print {
+                font-size: 16px;
+            }
         }
-    }
-
-    .tech-used {
-        margin: 4px 0;
     }
 
     .entries {
@@ -188,13 +216,31 @@ main {
         }
 
         .entry {
-            margin-bottom: 14px;
+            margin-bottom: 20px;
+            break-inside: avoid;
+
+            h2 {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            .tech-used {
+                margin-top: 4px;
+            }
 
             .date {
                 font-weight: normal;
                 margin-left: 0.5em;
                 font-size: 0.8em;
             }
+        }
+    }
+
+    #tech-experience {
+        h3 {
+            display: inline-block;
+            margin-right: 0.25em;
         }
     }
 
@@ -220,8 +266,11 @@ footer {
 
     p {
         text-align: center;
-        margin: 0;
         margin-bottom: 0.5em;
         padding: 0;
+    }
+
+    @media print {
+        display: none;
     }
 }

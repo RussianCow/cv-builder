@@ -16,7 +16,7 @@
 <body>
     <header>
         <div class="inner">
-            <h1 id="name">Sasha Chedygov's CV</h1>
+            <h1 id="name">Sasha Chedygov<span class="cv-suffix">'s CV</span></h1>
 
             <ul id="links">
                 <li class="link">
@@ -53,8 +53,10 @@
             <h1>Tech Experience</h1>
 
             {% for tech_type in tech_experience %}
+                <div>
                 <h3>{{ tech_type.label }}:</h3>
                 {{ tech_used(tech_type.tech) }}
+                </div>
             {% endfor %}
         </section>
 
