@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 from datetime import date
 import logging
@@ -18,7 +18,7 @@ def build(data_file_name):
     """Loads the data in the file given by `data_file_name` and builds
        the CV."""
     with open(data_file_name) as f:
-        data = yaml.load(f)
+        data = yaml.load(f, Loader=yaml.CLoader)
         data['last_updated'] = get_current_date()
         build_html(data)
     build_css(['style.less'])
