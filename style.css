@@ -280,6 +280,11 @@ main .entries .entry .date {
 main .entries .entry .job-description ul {
   padding-left: 1em;
 }
+@media print {
+  main .entries .entry .job-description ul {
+    font-size: 13px;
+  }
+}
 main #tech-experience h3 {
   display: inline-block;
   margin-right: 0.25em;
@@ -306,6 +311,11 @@ main #work-experience .entry .date {
 }
 main #work-experience .entry .job-description ul {
   padding-left: 1em;
+}
+@media print {
+  main #work-experience .entry .job-description ul {
+    font-size: 13px;
+  }
 }
 footer {
   margin: auto;
