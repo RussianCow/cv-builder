@@ -1,21 +1,18 @@
-(function() {
-    var techElements = document.querySelectorAll('[data-tech]')
-    techElements = Array.prototype.slice.apply(techElements)
-    techElements.forEach(function(techElement) {
-        techElement.addEventListener('mouseover', function() {
-            var tech = this.getAttribute('data-tech')
-            var relevantElements = techElements.filter(function(el) {
-                return el.getAttribute('data-tech') === tech
-            })
-            relevantElements.forEach(function(el) {
-                el.classList.add('active')
-            })
-        })
-
-        techElement.addEventListener('mouseout', function() {
-            techElements.forEach(function(el) {
-                el.classList.remove('active')
-            })
-        })
+const techElements = Array.from(document.querySelectorAll('[data-tech]'))
+for (const techElement of techElements) {
+    techElement.addEventListener('mouseover', event => {
+        const tech = event.target.getAttribute('data-tech')
+        const relevantElements = techElements.filter(el =>
+            el.getAttribute('data-tech') === tech
+        )
+        for (const el of relevantElements) {
+            el.classList.add('active')
+        }
     })
-})()
+
+    techElement.addEventListener('mouseout', () => {
+        for (const el of techElements) {
+            el.classList.remove('active')
+        }
+    })
+}
