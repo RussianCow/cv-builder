@@ -24,9 +24,19 @@ The output goes into the `out/` directory. To have the builder run any time any 
 $ ./watch.sh
 ```
 
+### Setting up backend infrastructure
+
+Install [Terraform](https://www.terraform.io/), then copy `sample.tfvars` to `prod.tfvars` (or any other name) and fill in with your AWS credentials. (Alternatively, authenticate through the AWS CLI.) After that, run:
+
+```sh
+$ cd infrastructure
+$ terraform init
+$ terraform apply -var-file=prod.tfvars
+```
+
 ### Copying to S3
 
-Copy `sample.env` to `.env` and input your AWS credentials. (Alternatively, log in through the AWS CLI.) After building, to upload the output files to an S3 bucket, run:
+Copy `sample.env` to `.env` and input your AWS credentials. (Again, you can instead log in with the CLI.) After building, to upload the output files to an S3 bucket, run:
 
 ```sh
 $ ./upload.py
