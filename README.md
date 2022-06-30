@@ -2,18 +2,32 @@
 
 This is the tool I use to generate the CV at [www.chedygov.com](http://www.chedygov.com/). It's a complete one-off tool that is not meant for general use, only for me.
 
-To run, make a Python virtualenv and install the dependencies:
+### Setup
 
-    pip install -r requirements.txt
+Make a Python virtualenv and install the dependencies:
 
-Then:
+```sh
+$ pip install -r requirements.txt
+```
 
-    python builder.py data.yaml
+You must also [install LESS](https://lesscss.org/usage/) so that `lessc` is available in your path.
 
-The relevant output files are `out.html`, `app.js`, `style.css`, and `portrait.jpg`. To have the builder run any time any of the input files are changed:
+### Building the site
 
-    ./watch.sh
+```sh
+$ ./builder.py data.yaml
+```
 
-And that's it.
+The output goes into the `out/` directory. To have the builder run any time any of the input files are changed:
 
-I suppose the "next steps" would be to generalize it and have it automatically upload the output to S3. Maybe add some testing, too. I doubt that's ever going to happen, though.
+```sh
+$ ./watch.sh
+```
+
+### Copying to S3
+
+Copy `sample.env` to `.env` and input your AWS credentials. (Alternatively, log in through the AWS CLI.) After building, to upload the output files to an S3 bucket, run:
+
+```sh
+$ ./upload.py
+```
