@@ -24,7 +24,7 @@ tech_experience:
   - label: Learning
     tech:
       - React Native
-      - SolidJS
+      - Svelte
       - Rust
       - DevOps
 
