@@ -31,7 +31,7 @@ tech_experience:
 
 work_experience:
   - employer: Evidation Health
-    role: Senior Frontend Engineer
+    role: Staff Frontend Engineer
     start_date: May 2021
     end_date: Present
     tech_used:
@@ -41,12 +41,12 @@ work_experience:
       - Ruby
       - Docker
     job_description: |
-      I am the frontend lead on a product team dedicated to building a platform for remote health studies. My duties include:
-      
+      I am the lead engineer on a product team dedicated to building a platform for remote health studies. I was promoted from Senior to Staff in just over a year at the company. My duties include:
+
       * Building new features required for future studies while ensuring strict backwards compatibility
-      * Limiting the risk and complexity of our codebase by reducing the number of moving parts, significantly increasing our test coverage, and adding more monitoring
-      * Working with product stakeholders to shape requirements into technical specifications
+      * Limiting the risk and complexity of our codebase by introducing TypeScript, significantly increasing our test coverage, reducing the number of moving parts, and adding more monitoring
       * Mentoring and leading pair programming sessions with less experienced engineers
+      * Working with product stakeholders to shape requirements into technical specifications
 
   - employer: Manzama / Diligent
     role: Senior Software Engineer
@@ -64,7 +64,7 @@ work_experience:
       - DevOps
     job_description: |
       Manzama's products provided market intelligence services targeted at law firms. Notable accomplishments include:
-      
+
       * Bringing our frontend development stack (previously composed of YUI, jQuery, and vanilla JS) up to modern day standards with React and Redux
       * Building the frontend experience of a new data analytics product, [Manzama Insights](http://manzama.com/manzama-insights/), which later became a major factor in the [acquisition of Manzama by Diligent](https://www.diligent.com/news/modern-governance-real-time-business-governance-intel-app/)
       * Introducing GraphQL to parts of the backend via a homegrown library to consolidate our ad hoc REST APIs
@@ -85,7 +85,7 @@ work_experience:
       - Vagrant
     job_description: |
       My role in the company was as a generalist software engineer on a range of products and services, including:
-      
+
       * A trip planner for businesses ([Tripgrid](https://www.tripgrid.com/), Rails/Vue.js)
       * A Django/AngularJS storefront ([Azure Standard](https://www.azurestandard.com/))
       * A warehouse automation project with Python
@@ -106,7 +106,7 @@ work_experience:
       - Vagrant
     job_description: |
       I led a team to develop apps and services on a range of tech stacks for our clients. I spent most of my time doing full-stack development for iOS apps in Swift, with PHP and Python on the backend, but I also did front-end web development with React and Redux. My role in the company went from being a one-man team working on an iOS app to eventually leading and mentoring a team of 3 junior developers. Notable projects include:
-      
+
       * Two iOS apps, one of which is currently in the App Store ([BUCKiTDREAM](https://www.buckitdream.com/))
       * An interactive data visualization tool for [The Freshwater Trust](https://www.thefreshwatertrust.org/)
       * A web-based calendar builder powered by React and Node.js
