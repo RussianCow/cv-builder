@@ -69,7 +69,7 @@ work_experience:
       * Bringing our frontend development stack (previously composed of YUI, jQuery, and vanilla JS) up to modern day standards with React and Redux
       * Building the frontend experience of a new data analytics product, [Manzama Insights](http://manzama.com/manzama-insights/), which later became a major factor in the [acquisition of Manzama by Diligent](https://www.diligent.com/news/modern-governance-real-time-business-governance-intel-app/)
       * Introducing GraphQL to parts of the backend via a homegrown library to consolidate our ad hoc REST APIs
-      * Helping improve error logging and monitoring across our products
+      * Improve error logging and monitoring across our products
       * Teaching modern frontend development practices to the rest of the engineering team
 
   - employer: Mercenary Technologies
@@ -125,7 +125,7 @@ work_experience:
       - Frontend JavaScript
       - React
     job_description: |
-      I created a software platform for non-profit organizations that predicted the likelihood and capacity of donations from their prospective donors. The foundation of the platform was the prediction algorithm, which combined machine learning with donor heuristics to produce a set of actionable reports for clients. These reports were accessible via an interactive Django-powered web app. I briefly became a business partner before DonorDynamics was acquired and dissolved.
+      I created a software platform for non-profit organizations that predicted the likelihood and capacity of donations from their prospective donors. The foundation of the platform was a prediction algorithm that combined machine learning with donor heuristics to produce a set of actionable reports for clients. These reports were accessible via an interactive Django-powered web app. I briefly became a business partner before DonorDynamics was acquired and dissolved.
 
   - employer: Readiness Systems
     role: Software Engineer (Contract)
