@@ -30,7 +30,7 @@ tech_experience:
 
 work_experience:
   - employer: Evidation Health
-    role: Staff Frontend Engineer
+    role: Associate Engineering Manager
     start_date: May 2021
     end_date: Present
     tech_used:
@@ -41,12 +41,11 @@ work_experience:
       - PostgreSQL
       - Docker
     job_description: |
-      I am a lead engineer on a product team dedicated to building a platform for remote health studies. I was promoted from Senior to Staff in just over a year at the company. My duties include:
+      I lead an engineering team dedicated to building a mobile-first platform for remote health studies. I was promoted from Senior Engineer to Staff, then to management, all in less than two years at the company. My duties include:
 
-      * Building new features required for future studies while ensuring strict backwards compatibility
-      * Mentoring and leading a team of frontend engineers
+      * Building and managing a participant-facing React Native frontend for our study content platform using Expo, TypeScript, and React Native for Web
+      * Mentoring and leading a team of frontend engineers while coordinating larger efforts across teams
       * Setting quality standards for our codebase to ensure long-term health
-      * Limiting the risk and complexity of our codebase by introducing TypeScript, significantly increasing our test coverage, reducing the number of moving parts, and adding more monitoring
       * Working with product stakeholders to shape requirements into technical specifications
 
   - employer: Manzama / Diligent
@@ -136,7 +135,7 @@ work_experience:
     tech_used:
       - Python
       - Flask
-      - MySQL
+      - PostgreSQL
     job_description: |
       I built a web app called ReadiTrack to track AED readiness and related certifications in accordance with local health and safety laws. ReadiTrack was sold to another company in November 2015, and I continue to provide maintenance services for the software (now [ClassByteAED](https://www.classbyte.com/classbyted-aed/)) in a very minor capacity.
 
