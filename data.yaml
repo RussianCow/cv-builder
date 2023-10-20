@@ -45,10 +45,10 @@ work_experience:
     job_description: |
       I lead and manage a team of frontend engineers dedicated to building a platform for digital health studies. I was promoted from Senior Engineer to Staff, then to management, all in less than two years at the company. My duties include:
 
-      * Building and managing participant-facing web and mobile frontends for our study content platform using TypeScript, React, and React Native
+      * Delivering participant-facing web and native mobile frontends for our study content platform
       * Implementing a flexible, reusable, and server-driven content rendering engine
       * Mentoring and leading a team of frontend engineers while coordinating larger efforts across teams
-      * Setting quality standards for our codebase to ensure long-term health and strict adherence to accessibility standards
+      * Setting quality standards for our codebase to ensure long-term health and adherence to accessibility standards
 
   - employer: Manzama / Diligent
     role: Senior Software Engineer
