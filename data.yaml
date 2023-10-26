@@ -37,17 +37,18 @@ work_experience:
     tech_used:
       - React
       - React Native
-      - Node.js
       - TypeScript
+      - Node.js
       - Ruby
       - PostgreSQL
       - Docker
     job_description: |
-      I lead and manage a team of frontend engineers dedicated to building a platform for digital health studies. I was promoted from Senior Engineer to Staff, then to management, all in less than two years at the company. My duties include:
+      I lead and manage a team of frontend engineers building a web and mobile platform for digital health studies using React, React Native (Expo), and TypeScript. Accomplishments include:
 
-      * Delivering participant-facing web and native mobile frontends for our study content platform
-      * Implementing a flexible, reusable, and server-driven content rendering engine
+      * Being promoted from Senior Engineer to Staff, then to Engineering Manager, all in less than two years
+      * Implementing a flexible and reusable content rendering engine that facilitates our server-driven UI, allowing us to make significant changes to our content whlie minimizing frontend engineering effort
       * Mentoring and leading a team of frontend engineers while coordinating larger efforts across teams
+      * Pinpointing and addressing bottlenecks in our development process, such as pushing for more visibility into business needs via a streamlined, async-first approach to feature refinement
       * Setting quality standards for our codebase to ensure long-term health and adherence to accessibility standards
 
   - employer: Manzama / Diligent
