@@ -46,7 +46,7 @@ work_experience:
       I lead and manage a team of frontend engineers building a web and mobile platform for digital health studies using React, React Native (Expo), and TypeScript. Accomplishments include:
 
       * Being promoted from Senior Engineer to Staff, then to Engineering Manager, all in less than two years
-      * Implementing a flexible and reusable content rendering engine that facilitates our server-driven UI, allowing us to make significant changes to our content whlie minimizing frontend engineering effort
+      * Implementing a flexible and reusable content rendering engine that facilitates our server-driven UI, allowing us to make significant changes to our content while minimizing frontend engineering effort
       * Mentoring and leading a team of frontend engineers while coordinating larger efforts across teams
       * Pinpointing and addressing bottlenecks in our development process, such as pushing for more visibility into business needs via a streamlined, async-first approach to feature refinement
       * Setting quality standards for our codebase to ensure long-term health and adherence to accessibility standards
