@@ -27,6 +27,7 @@ tech_experience:
       - Svelte
       - Rust
       - DevOps
+      - AWS
 
 
 work_experience:
@@ -41,7 +42,7 @@ work_experience:
       - Node.js
       - Ruby
       - PostgreSQL
-      - Docker
+      - AWS
     job_description: |
       I lead and manage a team of frontend engineers building a web and mobile platform for digital health studies using React, React Native (Expo), and TypeScript. Accomplishments include:
 
