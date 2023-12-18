@@ -71,7 +71,7 @@ work_experience:
       Manzama's products provided market intelligence services targeted at law firms. Notable accomplishments include:
 
       * Brought our frontend development stack up to modern day standards with React and Redux
-      * Built the frontend experience of a new data analytics product, [Manzama Insights](http://manzama.com/manzama-insights/), which later became a major factor in the [acquisition of Manzama by Diligent](https://www.diligent.com/company/newsroom/modern-governance-real-time-business-governance-intel-app)
+      * Built the frontend experience of a new data analytics product, Manzama Insights, which later became a major factor in the [acquisition of Manzama by Diligent](https://www.diligent.com/company/newsroom/modern-governance-real-time-business-governance-intel-app)
       * Introduced GraphQL to the backend via a homegrown library to consolidate our ad hoc REST APIs
       * Improved and standardized error logging and monitoring across our products
       * Taught modern frontend development practices to the rest of the engineering team
