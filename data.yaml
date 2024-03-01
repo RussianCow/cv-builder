@@ -19,13 +19,13 @@ tech_experience:
       - Vagrant
       - GraphQL
       - Docker
+      - AWS
 
   - label: Learning
     tech:
       - Svelte
       - Rust
       - Terraform
-      - AWS
 
 
 work_experience:
