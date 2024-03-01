@@ -26,7 +26,7 @@ tech_experience:
       - React Native
       - Svelte
       - Rust
-      - DevOps
+      - Terraform
       - AWS
 
 
@@ -43,6 +43,7 @@ work_experience:
       - Ruby
       - PostgreSQL
       - AWS
+      - Terraform
     job_description: |
       I lead and manage a team of frontend engineers building a web and mobile platform for digital health studies using React, React Native (Expo), and TypeScript. My duties and accomplishments include:
 
