@@ -16,7 +16,6 @@ tech_experience:
       - MySQL
       - MongoDB
       - Redis
-      - Vagrant
       - GraphQL
       - Docker
       - AWS
@@ -64,8 +63,7 @@ work_experience:
       - GraphQL
       - Redis
       - Docker
-      - Vagrant
-      - DevOps
+      - Salt
     job_description: |
       Manzama's products provided market intelligence services targeted at law firms. Notable accomplishments include:
 
@@ -86,7 +84,6 @@ work_experience:
       - Node.js
       - AngularJS
       - PostgreSQL
-      - Vagrant
     job_description: |
       I worked as a generalist software engineer on a range of products and services, including: a trip planner for businesses (Rails/Vue.js); a Django/AngularJS storefront; a warehouse automation project with Python; and a report generator for weather data stored in Cassandra.
 
@@ -103,7 +100,6 @@ work_experience:
       - Node.js
       - MySQL
       - PostgreSQL
-      - Vagrant
     job_description: |
       I led a team to develop apps and services on a range of tech stacks for our clients. I spent most of my time doing full-stack development for iOS apps in Swift, with PHP and Python on the backend, but I also did front-end web development with React and Redux. My role in the company went from being a one-man team working on an iOS app to eventually leading and mentoring a team of 3 junior developers.
 
