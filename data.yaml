@@ -11,9 +11,8 @@ tech_experience:
 
   - label: Proficient
     tech:
+      - React Native
       - Ruby
-      - iOS
-      - Swift
       - MySQL
       - MongoDB
       - Redis
@@ -23,7 +22,6 @@ tech_experience:
 
   - label: Learning
     tech:
-      - React Native
       - Svelte
       - Rust
       - Terraform
