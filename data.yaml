@@ -3,11 +3,11 @@ tech_experience:
     tech:
       - Frontend JavaScript
       - React
+      - TypeScript
       - Python
       - Django
       - PostgreSQL
       - Node.js
-      - TypeScript
 
   - label: Proficient
     tech:
