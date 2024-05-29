@@ -280,3 +280,17 @@ footer {
         display: none;
     }
 }
+
+.not-for-humans {
+    @media screen {
+        display: none;
+    }
+
+    @media print {
+        font-size: 4px;
+        // Setting text color as "white" doesn't work.
+        // See: https://stackoverflow.com/a/58715398/104184
+        color: transparent;
+        text-shadow: 0 0 0px #fff;
+    }
+}
