@@ -83,7 +83,7 @@ header {
         background: transparent;
         border-color: #cccccc;
         color: @text-color;
-        padding: 0 0 10px;
+        padding: 0 0 5px;
 
         .cv-suffix {
             display: none;
@@ -176,6 +176,10 @@ main {
         margin-bottom: 15px;
         line-height: 1;
         font-weight: normal;
+
+        @media print {
+            margin-bottom: 10px;
+        }
     }
 
     a {
@@ -186,6 +190,9 @@ main {
 
     section {
         margin-bottom: 20px;
+        @media print {
+            margin-bottom: 15px;
+        }
 
         h1 {
             border-bottom: 2px dotted #ccc;
