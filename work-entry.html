@@ -16,6 +16,8 @@
 
         {{ tech_used(entry.tech_used) }}
 
-        <div class="job-description">{{ render_text(entry.job_description) }}</div>
+        {% if entry.job_description %}
+            <div class="job-description">{{ render_text(entry.job_description) }}</div>
+        {% endif %}
     </div>
 {% endmacro %}

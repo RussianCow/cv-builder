@@ -55,7 +55,7 @@ p {
         @border-color: #dfdfdf;
 
         padding: 2px 5px;
-        margin: 0 0.5em 0.5em 0;
+        margin: 0 0.5em 0.25em 0;
 
         cursor: default;
         border: 1px solid @border-color;
@@ -192,6 +192,9 @@ main {
         margin-bottom: 20px;
         @media print {
             margin-bottom: 15px;
+            &:last-of-type {
+                margin-bottom: 0;
+            }
         }
 
         h1 {

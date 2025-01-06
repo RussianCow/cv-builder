@@ -28,6 +28,27 @@ tech_experience:
 
 
 work_experience:
+  - employer: Semi-Decent
+    role: Founder
+    start_date: November 2024
+    end_date: Present
+    tech_used:
+      - Svelte
+      - TypeScript
+      - Python
+      - Django
+      - PostgreSQL
+      - AWS
+      - Terraform
+    job_description: |
+      Together with [Ben Goertz](https://bengoertz.com/), I founded a software consultancy called [Semi-Decent](https://www.semidecent.com/) where you pay for results, not hours. We are a software consultancy that ships software quickly. To accomplish this, we do a couple things differently:
+
+      * We work in up to **6 week blocks** and **guarantee a deliverable** at the end of each block. If you need us for a larger project, you can book multiple blocks, but we plan each block as if it were a completely separate project with its own deliverable.
+
+      * We offer a **100% money back guarantee**. If you aren't satisfied with our work at the end of a block, you can get all of your money back for that block and you never have to see us again.
+
+      * We have **none of the overhead** of a traditional engineering organization. Once we've finalized requirements for a project, we put our heads down and get to work. This means we iterate more quickly and get vastly more work done than the average dev team.
+
   - employer: Evidation Health
     role: Staff Software Engineer
     start_date: May 2021
@@ -103,8 +124,6 @@ work_experience:
     job_description: |
       I drove development on apps and services on a range of tech stacks for clients, with a primary focus on full-stack iOS apps in Swift, PHP, and Python. I led and mentored a team of 3 junior developers.
 
-      Notable projects include: a social networking iOS app; an iOS-based messaging platform; an interactive data visualization tool; a web-based calendar builder; and a large scale Magento-based e-commerce site with custom integrations.
-
   - employer: DonorDynamics
     role: Software Engineer and Partner
     start_date: May 2013
@@ -155,5 +174,3 @@ work_experience:
       - Python
       - MySQL
       - Frontend JavaScript
-    job_description: |
-      I began my professional career by building web apps and websites for a range of clients. Notable projects include a fundraising website for the mayor of Tualatin and a web-based calculator for pump pressure.
