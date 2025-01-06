@@ -63,7 +63,7 @@ work_experience:
       - AWS
       - Terraform
     job_description: |
-      I led a team of frontend engineers in building a web and mobile platform for remote health studies. I served as an engineering manager for a year. My duties and accomplishments include:
+      I led a team of frontend engineers in building a web and mobile platform for remote health studies. I served as an engineering manager for a year. My duties and accomplishments included:
 
       * Spearheaded an initiative to improve reliability for a product serving millions of study participants by migrating to TypeScript, adding robust monitoring, vastly increasing test coverage, and removing redundant sources of truth, ultimately decreasing error rates by more than 75%
       * Built a new study platform using a cross-platform content rendering engine powered by a server-driven architecture that allows changes in logic to be made on the backend without needing updates to frontend apps
