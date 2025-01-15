@@ -25,7 +25,7 @@ def build(data_file_name):
     clean_output()
     os.makedirs(out_dir, exist_ok=True)
     with open(data_file_name) as f:
-        data = yaml.load(f, Loader=yaml.CLoader)
+        data = yaml.load(f, Loader=yaml.Loader)
         data['last_updated'] = get_current_date()
         build_html(data)
     build_css(['style.less'])
